@@ -19,11 +19,12 @@ Cloud Foundry offers quotas mechanism to manage available resources
 
 +++?code=gitPitch/kubeadm.sh&lang=bash
 
-+++?gist=lmars/8708967&lang=ruby
-
 @[5-6](Initialise Master)
 @[10-17](Join Cluster)
 @[18-28](View Nodes)
+
+
++++?gist=lmars/8708967&lang=ruby
 
 ---
 
