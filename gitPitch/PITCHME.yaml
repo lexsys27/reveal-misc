@@ -1,2 +1,2 @@
 vertical-center : true
-theme-override : PITCHME.css
+theme-override : gitPitch/PITCHME.css
