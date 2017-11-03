@@ -208,7 +208,7 @@ As you can see, the space quota now appears in the space information, confirming
 
 +++
 
-@[Difference from org quota]
+@title[Difference from org quota]
 
 The biggest difference between a space quota and an org quota is that a space quota can be unassigned:
 
