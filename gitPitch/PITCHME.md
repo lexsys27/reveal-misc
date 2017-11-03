@@ -200,7 +200,7 @@ cf set-space-quota hyper small-space-quota
 
 ### Space quotas
 
-<span color:red>Now</span>, get the information for your space:
+<span style="color:red">Now</span>, get the information for your space:
 
 ```sh
 cf space hyper
