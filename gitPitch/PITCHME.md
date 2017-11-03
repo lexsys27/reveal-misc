@@ -4,7 +4,7 @@
 
 ---
 
-![Test Image](gitPitch/test.png)
+![Test Image](gitPitch/test01.png)
 
 ---
 
