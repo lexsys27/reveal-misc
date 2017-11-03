@@ -73,10 +73,12 @@ Now that we know what modifiers to use, we can create our first quota:
 cf create-quota small-quota -i 512M -m 2048M -r 10 -s 5
 ```
 
-* maximum instance memory (`-i`): 512M
-* maximum memory allocation for all instances (`-m`): 2048M
-* maximum number of routes (`-r`): 10
-* maximum number of services (`-s`): 5 
+---
+
+1. maximum instance memory (`-i`): 512M
+1. maximum memory allocation for all instances (`-m`): 2048M
+1. maximum number of routes (`-r`): 10
+1. maximum number of services (`-s`): 5 
 
 ---
 
