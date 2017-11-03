@@ -1,2 +1,2 @@
-vertical-center : false
-
+vertical-center : true
+theme-override : PITCHME.css
