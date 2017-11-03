@@ -19,6 +19,8 @@ Cloud Foundry offers quotas mechanism to manage available resources
 
 +++?code=gitPitch/kubeadm.sh&lang=bash
 
++++?gist=lmars/8708967&lang=ruby
+
 ---
 
 ### Quota Structure
