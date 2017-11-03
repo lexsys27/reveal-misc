@@ -29,9 +29,7 @@ Cloud Foundry offers quotas mechanism to manage available resources
 -	**instance memory limit**: the maximum amount of memory that an instance can use, e.g., `256M` or `2G`
 -	**memory limit**: the maximum amount of memory allowed to be used in the plan, e.g., `512M` or `1G`
 
----
-
-### Quota Structure
++++
 
 -	**total routes**: the maximum number of routes allowed for the plan
 -	**total services**: the maximum number of services allowed in the plan
@@ -71,9 +69,7 @@ cf help create-quota
 
 **Reminder:** You can get help on a CLI command by doing `cf help command-name`.
 
----
-
-### Creating and managing quotas
++++
 
 Now that we know what modifiers to use, we can create our first quota:
 
@@ -81,16 +77,14 @@ Now that we know what modifiers to use, we can create our first quota:
 cf create-quota small-quota -i 512M -m 2048M -r 10 -s 5
 ```
 
----
++++
 
 1. maximum instance memory (`-i`): 512M
 1. maximum memory allocation for all instances (`-m`): 2048M
 1. maximum number of routes (`-r`): 10
 1. maximum number of services (`-s`): 5 
 
----
-
-### Creating and managing quotas
++++
 
 If you list the quotas again, you'll see that your newly created quota is there.
 
@@ -98,9 +92,7 @@ If you list the quotas again, you'll see that your newly created quota is there.
 $ cf quotas
 ```
 
----
-
-### Creating and managing quotas
++++
 
 Let's create a second quota, a larger one that allows paid plans:
 
@@ -124,9 +116,7 @@ cf update-quota large-quota --disallow-paid-service-plans
 
 Now, users of this quota will not be able to provision any paid services.
 
----
-
-### Modifying a quota
++++
 
 Also, we can modify any other quota parameter as we see fit:
 
@@ -146,9 +136,7 @@ Now that we have created a quota, we can apply it to an org:
 cf set-quota riman large-quota
 ```
 
----
-
-### Assigning quotas
++++
 
 If you query `riman` details, you will see that the quota has been assigned to it:
 
@@ -176,9 +164,7 @@ cf delete-quota small-quota
 
 Space quotas are the same as regular quotas, but they can be assigned to specific spaces instead of orgs.
 
----
-
-### Space quotas
++++
 
 Create a space quota with:
 
@@ -186,9 +172,7 @@ Create a space quota with:
 cf create-space-quota small-space-quota -i 512M -m 2048M -r 10 -s 5
 ```
 
----
-
-### Space quotas
++++
 
 Now modify it:
 
@@ -196,9 +180,7 @@ Now modify it:
 cf update-space-quota small-space-quota -i 128M
 ```
 
----
-
-### Space quotas
++++
 
 Assign the quota to your space:
 
@@ -206,9 +188,7 @@ Assign the quota to your space:
 cf set-space-quota hyper small-space-quota
 ```
 
----
-
-### Space quotas
++++
 
 <span style="color:red">Now</span>, get the information for your space:
 
@@ -218,9 +198,7 @@ cf space hyper
 
 As you can see, the space quota now appears in the space information, confirming that it was added successfully.
 
----
-
-### Space quotas
++++
 
 The biggest difference between a space quota and an org quota is that a space quota can be unassigned:
 
@@ -230,9 +208,7 @@ cf unset-space-quota hyper small-space-quota
 
 Before you complete this section, set the previously unset space quota back to the `hyper`.
 
----
-
-### Space quotas
++++
 
 You can list all the space quotas or get information about a specific one, using the `space-quotas` and `space-quota` commands.
 
