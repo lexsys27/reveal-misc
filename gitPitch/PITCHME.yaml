@@ -1,5 +1,7 @@
 vertical-center : true
 transition : slide
-published : true
+published : false
 theme: moon
+logo: gitPitch/altoros_logo.png
+
 
