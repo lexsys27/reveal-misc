@@ -166,6 +166,8 @@ Space quotas are the same as regular quotas, but they can be assigned to specifi
 
 +++
 
+@title[Create]
+
 Create a space quota with:
 
 ```sh
@@ -173,6 +175,8 @@ cf create-space-quota small-space-quota -i 512M -m 2048M -r 10 -s 5
 ```
 
 +++
+
+@title[Update]
 
 Now modify it:
 
@@ -182,6 +186,8 @@ cf update-space-quota small-space-quota -i 128M
 
 +++
 
+@title[Assign]
+
 Assign the quota to your space:
 
 ```sh
@@ -189,6 +195,8 @@ cf set-space-quota hyper small-space-quota
 ```
 
 +++
+
+@title[Get Info]
 
 <span style="color:red">Now</span>, get the information for your space:
 
@@ -200,6 +208,8 @@ As you can see, the space quota now appears in the space information, confirming
 
 +++
 
+@[Difference from org quota]
+
 The biggest difference between a space quota and an org quota is that a space quota can be unassigned:
 
 ```sh
@@ -209,6 +219,8 @@ cf unset-space-quota hyper small-space-quota
 Before you complete this section, set the previously unset space quota back to the `hyper`.
 
 +++
+
+@title[List]
 
 You can list all the space quotas or get information about a specific one, using the `space-quotas` and `space-quota` commands.
 
