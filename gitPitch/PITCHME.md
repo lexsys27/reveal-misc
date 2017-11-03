@@ -4,6 +4,10 @@
 
 ---
 
+![Test Image](test.png)
+
+---
+
 ```bash
 # May I use comments here?
 
