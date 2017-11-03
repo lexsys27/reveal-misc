@@ -17,7 +17,7 @@ Cloud Foundry offers quotas mechanism to manage available resources
 
 ### Let's look at Kubernetes example
 
----?code=kubeadm.sh@lang=bash
+---?code=gitPitch/kubeadm.sh@lang=bash
 
 ---
 
