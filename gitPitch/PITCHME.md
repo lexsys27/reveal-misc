@@ -15,6 +15,12 @@ Cloud Foundry offers quotas mechanism to manage available resources
 
 ---
 
+### Let's look at Kubernetes example
+
+---?code=https://github.com/lexsys27/k8s-misc/blob/master/katacoda/kubeadm.sh
+
+---
+
 ### Quota Structure
 
 -	**name**: a name you will use to identify the plan;
