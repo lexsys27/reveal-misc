@@ -218,8 +218,7 @@ cf unset-space-quota hyper small-space-quota
 
 Before you complete this section, set the previously unset space quota back to the `hyper`.
 
-Notes: 
-
+Note: 
 - speak about why space quotas are important
 - describe use cases for org quotas and space quotas.  
 
