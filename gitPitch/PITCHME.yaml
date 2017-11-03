@@ -1,2 +1,3 @@
 vertical-center : true
-theme-override : gitPitch/PITCHME.css
+transition : none
+
