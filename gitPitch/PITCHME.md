@@ -4,7 +4,7 @@
 
 ---
 
-![Test Image](test.png)
+![Test Image](./test.png)
 
 ---
 
